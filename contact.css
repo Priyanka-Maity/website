@@ -1,0 +1,44 @@
+html,
+body{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.contact_container{
+height: auto;
+width: 100%;
+}
+.contact_div{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 10px;
+}
+.contact_one{
+height:auto;
+ width:100%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.booking_from{
+    height: auto;
+    width: 50%;
+
+}
+@media (max-width: 768px) {
+    .contact_one {
+        flex-direction: column;
+    }
+
+    .booking_from {
+        width: 100%;
+    }
+
+    .contact_div {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .contact_one > div{
+        padding-bottom: 20px;
+    }
+}

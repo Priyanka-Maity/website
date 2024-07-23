@@ -1,0 +1,84 @@
+.chefs_container {
+    text-align: center;
+}
+
+.chefs_team {
+    height: auto;
+    width: 100%;
+    padding-bottom: 50px;
+    margin: 10px;
+}
+
+.chefs_div {
+    display: flex; 
+    gap: 30px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.chefs_div>div {
+    width: 50%;
+    height: 350px;
+    align-content: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 20px 2px 15px 19px rgba(160, 159, 159, 0.12), 0 0px 0px 0px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    overflow: hidden; 
+}
+
+.chefs_div>div>img {
+    height: 250px;
+    width: 250px;
+    border-radius: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chefs_div>div>img:hover {
+    transform: scale(1.1);
+    padding-bottom: 10px;
+}
+
+.chefs_content {
+    font-size: 14px;
+    color: #5e5d5d;
+    font-weight: 100;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 5px;
+    overflow: hidden; 
+}
+
+.chefs_main_content {
+    font-size: 17px;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 10px;
+    overflow: hidden; 
+ 
+}
+@media (max-width: 768px) {
+    .chefs_div {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .chefs_div>div {
+        width: 100%;
+        height: auto; 
+        padding: 10px;/* Allow height to adjust based on content */
+    }
+
+    .chefs_div>div>img {
+        height: 200px;
+        width: 200px;
+        margin-bottom: 10px;
+    }
+
+    .chefs_content {
+        font-size: 12px;
+    }
+
+    .chefs_main_content {
+        font-size: 15px;
+    }
+}

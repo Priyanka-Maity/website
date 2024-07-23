@@ -1,0 +1,26 @@
+.card_container_flexs{
+    padding-bottom: 50px;
+    padding-top: 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+  .card_container_flexes {
+    padding-top: 50px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+@media (max-width: 600px) {
+    .card_container_flexes,
+    .card_container_flexs{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+}

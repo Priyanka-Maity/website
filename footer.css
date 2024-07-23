@@ -1,0 +1,115 @@
+html body * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer_container {
+    background-color: #0F1035;
+    height: auto;
+    width: 100%;
+    padding: 30px;
+    color: #fff;
+}
+
+.footer_container_one {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #fff;
+}
+
+.footer_container_two {
+    height: 30%;
+    width: 100%;
+    align-content: center;
+}
+
+ .footer_contents > i {
+    font-size: 20px;
+    font-weight: bold;
+    color: coral;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.footer_contents > div {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.footer_contents > div > p{
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 10px;
+    font-weight: 100;
+   
+}
+.footer_contents > div > p >  a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer_icon{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.footer_input{
+    height: 50px;
+    width: 100%;
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    border-radius: 4px;
+    padding: 10px;
+}
+.footer_input > input{
+border: none;
+padding: 10px;
+}
+.footer_input > button{
+    height: 40px;
+    width: 100px;
+    background-color: coral;
+    border-radius: 4px;
+    align-content: center;
+    text-align: center;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+.last{
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-weight: 100;  
+}
+@media (max-width: 768px) {
+    .footer_container_one {
+        flex-direction: column;
+        align-items: flex-start; /* Align items to the start */
+    }
+    .footer_container{
+        width: 100%;
+    }
+    .footer_icon {
+        flex-direction: row; /* Stack icons vertically */
+        gap: 10px; /* Reduce gap for better spacing */
+    }
+
+    .footer_input {
+        flex-direction: row; /* Stack input and button vertically */
+        gap: 10px;/* Add gap between input and button */
+    }
+
+    .footer_input > button {
+        width: 100%; /* Full width button */
+    }
+}
